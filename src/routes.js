@@ -174,6 +174,9 @@ const MessageTrace = React.lazy(() => import('src/views/email-exchange/reports/M
 const PhishingPoliciesList = React.lazy(() =>
   import('src/views/email-exchange/reports/PhishingPoliciesList'),
 )
+const ExchPermissonsList = React.lazy(() =>
+  import('src/views/email-exchange/reports/PermissionsReportList'),
+)
 const TransportRulesList = React.lazy(() =>
   import('src/views/email-exchange/transport/TransportRules'),
 )
@@ -575,6 +578,11 @@ const routes = [
     name: 'Phishing Policies',
     path: '/email/reports/phishing-policies',
     component: PhishingPoliciesList,
+  },
+  {
+    name: 'Permissions Report',
+    path: '/email/reports/permissions-report',
+    component: ExchPermissonsList,
   },
   { name: 'Security & Compliance', path: '/security' },
   { name: 'Security Administration', path: '/security/administration' },

@@ -606,6 +606,11 @@ const _nav = [
         name: 'Phishing Policies',
         to: '/email/reports/phishing-policies',
       },
+      {
+        component: CNavItem,
+        name: 'Permissions Report',
+        to: '/email/reports/permissions-report',
+      },
     ],
   },
   {
